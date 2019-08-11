@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import "./styles.css";
 
 export default class PageNotFound extends React.Component {
+  constructor(props) {
+    super(props);
+    document.title = "Page Not Found";
+  }
+
   render() {
     return (
       <div class="container">

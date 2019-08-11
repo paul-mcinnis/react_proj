@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
 import { About, Contact, Home, PageNotFound, Projects } from "./scenes";
 
 export default function Router() {
@@ -7,10 +7,24 @@ export default function Router() {
     <BrowserRouter>
       <div>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/about" component={About} />
-          <Route path="/projects" component={Projects} />
-          <Route path="/contactUs" component={Contact} />
+          <Route
+            exact
+            path="/"
+            render={props => <Home {...props} title="Welcome" />}
+          />
+          <Route path="/home" render={() => <Redirect to="/" />} />
+          <Route
+            path="/about"
+            render={props => <About {...props} title="About" />}
+          />
+          <Route
+            path="/projects"
+            render={props => <Projects {...props} title="Projects" />}
+          />
+          <Route
+            path="/contactUs"
+            render={props => <Contact {...props} title="Contact Us" />}
+          />
           <Route component={PageNotFound} />
         </Switch>
       </div>

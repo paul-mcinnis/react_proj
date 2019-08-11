@@ -1,0 +1,37 @@
+.nav-bar {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  padding: 20px;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.8);
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  font-size: 1.5rem;
+}
+
+.nav-bar--hidden {
+  background-color: transparent;
+}
+
+.nav-bar a {
+  font-weight: bold;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav-bar a.router-link-exact-active {
+  color: #669999;
+}
+
+/* mobile */
+@media (max-width: 544px) {
+  .nav-bar {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
