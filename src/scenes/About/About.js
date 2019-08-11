@@ -10,7 +10,7 @@ export class About extends React.Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <Navbar activeLink="About" />
         <h1>About page</h1>
       </div>
     );

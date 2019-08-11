@@ -10,7 +10,7 @@ export default class Contact extends React.Component {
   render() {
     return (
       <div>
-        <Navbar />
+        <Navbar activeLink="Contact" />
         <h1>Contact page</h1>
       </div>
     );

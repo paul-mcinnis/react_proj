@@ -13,8 +13,8 @@
   font-size: 1.5rem;
 }
 
-.nav-bar--hidden {
-  background-color: transparent;
+.nav-bar .active {
+  color: #669999;
 }
 
 .nav-bar a {
@@ -22,10 +22,6 @@
   color: black;
   margin-left: 10px;
   margin-right: 10px;
-}
-
-.nav-bar a.router-link-exact-active {
-  color: #669999;
 }
 
 /* mobile */

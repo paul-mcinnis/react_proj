@@ -6,10 +6,27 @@ export default class Navbar extends React.Component {
   render() {
     return (
       <div id="nav" class="nav-bar">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/contactUs">Contact Us</Link>
+        <Link class={this.props.activeLink === "Home" ? "active" : ""} to="/">
+          Home
+        </Link>
+        <Link
+          class={this.props.activeLink === "About" ? "active" : ""}
+          to="/about"
+        >
+          About
+        </Link>
+        <Link
+          class={this.props.activeLink === "Projects" ? "active" : ""}
+          to="/projects"
+        >
+          Projects
+        </Link>
+        <Link
+          class={this.props.activeLink === "Contact" ? "active" : ""}
+          to="/contactUs"
+        >
+          Contact Us
+        </Link>
       </div>
     );
   }
