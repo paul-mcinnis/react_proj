@@ -1,6 +1,13 @@
 import React from "react";
 import { BrowserRouter, Redirect, Route, Switch } from "react-router-dom";
-import { About, Contact, Home, PageNotFound, Projects } from "./scenes";
+import {
+  About,
+  Contact,
+  Home,
+  Journal,
+  PageNotFound,
+  Projects
+} from "./scenes";
 
 export default function Router() {
   return (
@@ -20,6 +27,10 @@ export default function Router() {
           <Route
             path="/projects"
             render={props => <Projects {...props} title="Projects" />}
+          />
+          <Route
+            path="/journal"
+            render={props => <Journal {...props} title="Journal" />}
           />
           <Route
             path="/contactUs"

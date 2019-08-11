@@ -22,6 +22,12 @@ export default class Navbar extends React.Component {
           Projects
         </Link>
         <Link
+          class={this.props.activeLink === "Journal" ? "active" : ""}
+          to="/journal"
+        >
+          Journal
+        </Link>
+        <Link
           class={this.props.activeLink === "Contact" ? "active" : ""}
           to="/contactUs"
         >

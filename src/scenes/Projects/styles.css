@@ -1,0 +1,9 @@
+#projectscontainer {
+  text-align: center;
+  min-width: 100%;
+  background-image: url("../../assets/images/projects-bg.jpg");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

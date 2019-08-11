@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar } from "../../components";
+import "./styles.css";
 
 export class About extends React.Component {
   constructor(props) {
@@ -9,7 +10,7 @@ export class About extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id="aboutcontainer" className="container">
         <Navbar activeLink="About" />
         <h1>About page</h1>
       </div>

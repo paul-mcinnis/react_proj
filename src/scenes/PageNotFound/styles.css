@@ -1,14 +1,11 @@
-.container {
-  /* Full height */
-  height: 100vh;
+#notfoundcontainer {
+  text-align: center;
   min-width: 100%;
+  background-image: url("../../assets/images/notfound-bg.png");
 
-  background-image: url("../../assets/images/city-bg.png");
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 strong {
   font-style: italic;

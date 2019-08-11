@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar } from "../../components";
 import "./styles.css";
 
-export default class Home extends React.Component {
+export default class Journal extends React.Component {
   constructor(props) {
     super(props);
     document.title = this.props.title;
@@ -10,9 +10,9 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <div id="homecontainer" class="container">
-        <Navbar activeLink="Home" />
-        <h1>Home page</h1>
+      <div id="jounralcontainer" class="container">
+        <Navbar activeLink="Journal" />
+        <h1>My Journal page</h1>
       </div>
     );
   }

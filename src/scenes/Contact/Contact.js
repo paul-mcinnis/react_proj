@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar } from "../../components";
+import "./styles.css";
 
 export default class Contact extends React.Component {
   constructor(props) {
@@ -9,7 +10,7 @@ export default class Contact extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id="contactcontainer" class="container">
         <Navbar activeLink="Contact" />
         <h1>Contact page</h1>
       </div>

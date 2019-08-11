@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar } from "../../components";
+import "./styles.css";
 
 export default class Projects extends React.Component {
   constructor(props) {
@@ -9,7 +10,7 @@ export default class Projects extends React.Component {
 
   render() {
     return (
-      <div>
+      <div id="projectscontainer" class="container">
         <Navbar activeLink="Projects" />
         <h1>Projects page</h1>
       </div>
