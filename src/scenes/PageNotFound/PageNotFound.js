@@ -10,10 +10,10 @@ export default class PageNotFound extends React.Component {
           <div id="notfoundtxt" class="col-md">
             <h1>Sorry</h1>
             <h2>We can't find that page</h2>
-            <Link to="/">
-              Would you like to go the the
-              <strong>home page?</strong>
-            </Link>
+            <h3>
+              Would you like to go the the &nbsp;
+              <Link to="/">home page</Link>?
+            </h3>
           </div>
         </div>
       </div>
