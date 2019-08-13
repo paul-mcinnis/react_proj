@@ -10,7 +10,7 @@ export default class Projects extends React.Component {
 
   render() {
     return (
-      <div id="projectscontainer" class="container">
+      <div id="projectscontainer" className="container">
         <Navbar activeLink="Projects" />
         <h1>Projects page</h1>
       </div>

@@ -24,9 +24,14 @@
 }
 
 /* mobile */
-@media (max-width: 544px) {
+@media (max-width: 600px) {
   .nav-bar {
     padding: 10px;
     font-size: 1rem;
+  }
+
+  .nav-bar a {
+    margin-left: 8px;
+    margin-right: 8px;
   }
 }

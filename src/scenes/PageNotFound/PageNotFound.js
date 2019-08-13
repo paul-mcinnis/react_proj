@@ -10,9 +10,9 @@ export default class PageNotFound extends React.Component {
 
   render() {
     return (
-      <div id="notfoundcontainer" class="container">
-        <div class="row">
-          <div id="notfoundtxt" class="col-md">
+      <div id="notfoundcontainer" className="container">
+        <div className="row">
+          <div id="notfoundtxt" className="col-md">
             <h1>Sorry</h1>
             <h2>We can't find that page</h2>
             <h3>

@@ -5,30 +5,33 @@ import "./styles.css";
 export default class Navbar extends React.Component {
   render() {
     return (
-      <div id="nav" class="nav-bar">
-        <Link class={this.props.activeLink === "Home" ? "active" : ""} to="/">
+      <div id="nav" className="nav-bar">
+        <Link
+          className={this.props.activeLink === "Home" ? "active" : ""}
+          to="/"
+        >
           Home
         </Link>
         <Link
-          class={this.props.activeLink === "About" ? "active" : ""}
+          className={this.props.activeLink === "About" ? "active" : ""}
           to="/about"
         >
           About
         </Link>
         <Link
-          class={this.props.activeLink === "Projects" ? "active" : ""}
+          className={this.props.activeLink === "Projects" ? "active" : ""}
           to="/projects"
         >
           Projects
         </Link>
         <Link
-          class={this.props.activeLink === "Journal" ? "active" : ""}
+          className={this.props.activeLink === "Journal" ? "active" : ""}
           to="/journal"
         >
           Journal
         </Link>
         <Link
-          class={this.props.activeLink === "Contact" ? "active" : ""}
+          className={this.props.activeLink === "Contact" ? "active" : ""}
           to="/contactUs"
         >
           Contact Us

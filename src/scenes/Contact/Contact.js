@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar } from "../../components";
+import { ContactMeForm } from "./components";
 import "./styles.css";
 
 export default class Contact extends React.Component {
@@ -10,9 +11,9 @@ export default class Contact extends React.Component {
 
   render() {
     return (
-      <div id="contactcontainer" class="container">
+      <div id="contactcontainer" className="container">
         <Navbar activeLink="Contact" />
-        <h1>Contact page</h1>
+        <ContactMeForm />
       </div>
     );
   }

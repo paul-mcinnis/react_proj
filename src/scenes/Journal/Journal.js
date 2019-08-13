@@ -10,7 +10,7 @@ export default class Journal extends React.Component {
 
   render() {
     return (
-      <div id="jounralcontainer" class="container">
+      <div id="jounralcontainer" className="container">
         <Navbar activeLink="Journal" />
         <h1>My Journal page</h1>
       </div>

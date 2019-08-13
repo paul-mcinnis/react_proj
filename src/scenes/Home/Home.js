@@ -10,7 +10,7 @@ export default class Home extends React.Component {
 
   render() {
     return (
-      <div id="homecontainer" class="container">
+      <div id="homecontainer" className="container">
         <Navbar activeLink="Home" />
         <h1>Home page</h1>
       </div>
