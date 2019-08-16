@@ -30,6 +30,10 @@ export default class ConContactMeForm extends React.Component {
     });
   }
 
+  isFormDisabled(event) {
+    return this.state.submitted;
+  }
+
   render() {
     const maxNameLength = 50;
     const maxEmailLength = 50;
@@ -48,6 +52,7 @@ export default class ConContactMeForm extends React.Component {
               value={this.state.name}
               onChange={this.handleInputChange}
               maxLength={maxNameLength}
+              disabled={this.isFormDisabled()}
               required
             />
           </Form.Group>
@@ -61,6 +66,7 @@ export default class ConContactMeForm extends React.Component {
               value={this.state.email}
               onChange={this.handleInputChange}
               maxLength={maxEmailLength}
+              disabled={this.isFormDisabled()}
               required
             />
             <Form.Text className="text-muted">
@@ -79,6 +85,7 @@ export default class ConContactMeForm extends React.Component {
               onChange={this.handleInputChange}
               rows="4"
               maxLength={maxMessageLength}
+              disabled={this.isFormDisabled()}
               required
             />
           </Form.Group>
@@ -87,19 +94,12 @@ export default class ConContactMeForm extends React.Component {
             / {maxMessageLength}
           </Form.Text>
 
-          <Button variant="primary" type="submit">
+          <Button id="contactusSubmitbuttom" variant="primary" type="submit">
             Submit
           </Button>
         </Form>
         {this.state.submitted && (
-          <div>
-            <h2> form submitted </h2>
-            <ul>
-              <ui>name: {this.state.name}</ui>
-              <ui>email: {this.state.email}</ui>
-              <ui>message: {this.state.message}</ui>
-            </ul>
-          </div>
+          <h2> form Successfully submitted submitted </h2>
         )}
       </div>
     );
