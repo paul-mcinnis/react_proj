@@ -1,0 +1,16 @@
+version: "3.7"
+
+services:
+  react-proj:
+    container_name: react-proj
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ".:/app"
+      - "/app/node_modules"
+    ports:
+      - "8000:80"
+    restart: always
+    environment:
+      - NODE_ENV=prod

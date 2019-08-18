@@ -1,5 +1,6 @@
 import React from "react";
 import { Navbar } from "../../components";
+import { API_BASE_URL } from "../../api-config";
 import "./styles.css";
 
 export class About extends React.Component {
@@ -29,7 +30,8 @@ export class About extends React.Component {
     return (
       <div id="aboutcontainer" className="container">
         <Navbar activeLink="About" />
-        <h1>About page</h1>
+        <h2>API BASE URL = {API_BASE_URL}</h2>
+        <h2> {window && window.location && window.location.hostname}</h2>
         <h2>{this.state.testText}</h2>
       </div>
     );
