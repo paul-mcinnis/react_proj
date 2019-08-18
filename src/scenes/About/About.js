@@ -1,6 +1,6 @@
 import React from "react";
 import { Navbar } from "../../components";
-import { API_BASE_URL } from "../../api-config";
+import { API_BASE_URL } from "../../config";
 import "./styles.css";
 
 export class About extends React.Component {
